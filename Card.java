@@ -16,6 +16,10 @@ enum Suit{Club,Diamond,Heart,Spades};
 		public void printCard()
 		 {//Hint: print (System.out.println) card as suit,rank, for example: print 1,1 as Clubs Ace
 		String []R={"Ace","2","3","4","5","6","7","8","9","10","J","Q","K"};
+		 if(getRank()>9) 
+		 {
+			 R[getRank()-1]="10";
+			  }
 		System.out.println(getSuit().name()+" "+R[getRank()-1]);//印出花色及牌的大小
 			}
 			
